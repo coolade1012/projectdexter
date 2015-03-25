@@ -1,0 +1,4 @@
+4
+Charmander
+Lizard Pokemon
+[<pokedex.db.tables.PokemonSpecies object (5): charmeleon>]

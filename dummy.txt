@@ -1,0 +1,4 @@
+1
+Bulbasaur
+Seed Pokemon
+[<pokedex.db.tables.PokemonSpecies object (2): ivysaur>]
