@@ -21,8 +21,8 @@ class ProjectDexterWebService(object):
     def GET(self):
         return cherrypy.session['myresult']
 
-    def POST(self, identifier='bulbasaur'):
-        identifier = identifier.lower()
+    def POST(self, pname='bulbasaur'):
+        identifier = pname.lower()
         session = connect()
         pokemon = util.get(session, tables.PokemonSpecies, identifier)
         result = u'{0.name}, the {0.genus} Pokemon'.format(pokemon)

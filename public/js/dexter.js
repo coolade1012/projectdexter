@@ -6,11 +6,11 @@
             //search function
             $("#generate-result").click(function (e) {
                 $.post("/generator", {
-                        "identifier": $("input[name='identifier']").val()
+                        "pname": $("input[name='pname']").val()
                     })
                     .done(function (string) {
                         $("#the-result").show();
-          --              $("#the-display").val(string);
+                        $("#the-display").val(string);
                     });
                 e.preventDefault();
             });
