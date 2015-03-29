@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /*--
 Last used margin: 0 auto; to centher buttons on page
 --*/
+
 body {
     padding: 0;
     margin: 0;
@@ -52,7 +53,6 @@ ul {
 label {
     margin: 0;
 }
-
 /*-----start-header----*/
 
 .header {
@@ -84,13 +84,8 @@ label {
 }
 
 .top-menu div ul li a.active {
-    background: #d95953;    <p id="legal">Copyright © 2015 All rights reserved | Template by <a href="http://w3layouts.com">  W3layouts</a>
-                    <br>Pokémon And All Respective Names are Trademark & © of <a href="http://www.nintendo.com/">Nintendo</a> 1996-2015
-                    <br>Website Hosted by <a href="https://www.digitalocean.com/">DigitalOcean</a>
-                    <br> Powered by <a href="http://www.cherrypy.org/">CherryPy WebFramework</a>
-                    <br>Database Toolkit used <a href="http://www.sqlalchemy.org/">SQLAlchemy</a>
-                    <br>Database by <a href="https://github.com/veekun/pokedex"> Veekun</a>
-                    <br> Buttons Inspired and borrowed from <a href="http://oneliferemaining.deviantart.com/art/Pokemon-Summery-Ref-Sheet-307218819">OneLifeRemaining</a> on DeviantArt
+    background: #d95953;
+    <p id="legal">Copyright © 2015 All rights reserved | Template by <a href="http://w3layouts.com"> W3layouts</a> <br>Pokémon And All Respective Names are Trademark & © of <a href="http://www.nintendo.com/">Nintendo</a> 1996-2015 <br>Website Hosted by <a href="https://www.digitalocean.com/">DigitalOcean</a> <br> Powered by <a href="http://www.cherrypy.org/">CherryPy WebFramework</a> <br>Database Toolkit used <a href="http://www.sqlalchemy.org/">SQLAlchemy</a> <br>Database by <a href="https://github.com/veekun/pokedex"> Veekun</a> <br> Buttons Inspired and borrowed from <a href="http://oneliferemaining.deviantart.com/art/Pokemon-Summery-Ref-Sheet-307218819">OneLifeRemaining</a> on DeviantArt
 }
 
 .top-menu div ul li a:hover {
@@ -106,7 +101,7 @@ label {
 }
 
 .app img:hover {
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 .features-section {
@@ -127,7 +122,7 @@ label {
 
 .gallery-section-head p,
 .features-section-head p {
-    color: #fff; 
+    color: #fff;
     font-size: 1.7em;
     font-weight: 300;
     letter-spacing: 7px;
@@ -726,10 +721,9 @@ a.button.curl-bottom-right:hover {
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     width: 23%;
-    margin: 1% auto;
-    vertical-align: middle
-    display: none;
-    float:left;
+    margin: 1%;
+    vertical-align: middle display: none;
+    float: left;
     overflow: hidden;
     padding: 0;
     vertical-align: middle;
@@ -737,7 +731,7 @@ a.button.curl-bottom-right:hover {
 
 div#portfoliolist {
     padding: 0;
-    margin: 5% 0 0 0;
+    margin: 10% 0 0 0;
 }
 
 .portfolio-wrapper {
@@ -860,7 +854,6 @@ div#portfoliolist {
     
     border-radius: 10px;
 }
-
 /*
 .tour-caption span,
 .tour-caption-Stats span,
@@ -894,6 +887,21 @@ div#portfoliolist {
     background-size: 100%;
 }
 
+.tour-caption span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
+}
+
 .tour-caption-Breeding span {
     background: url(../images/Breeding_pressed.png) no-repeat;
     width: 100%;
@@ -906,6 +914,20 @@ div#portfoliolist {
     
     background-size: 100%;
 }
+.tour-caption-Breeding span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
+}
 
 .tour-caption-Dex span {
     background: url(../images/Dex-pressed.png) no-repeat;
@@ -914,10 +936,21 @@ div#portfoliolist {
     display: block;
     text-align: center;
     position: absolute;
-    /*top: 19%;
-	right: 31%;*/
-    
     background-size: 100%;
+}
+.tour-caption-Dex span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
 }
 
 .tour-caption-Type span {
@@ -933,6 +966,21 @@ div#portfoliolist {
     background-size: 100%;
 }
 
+.tour-caption-Type span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
+}
+
 .tour-caption-Evolution span {
     background: url(../images/Evolution_pressed.png) no-repeat;
     width: 100%;
@@ -942,8 +990,21 @@ div#portfoliolist {
     position: absolute;
     /*top: 19%;
 	right: 31%;*/
-    
     background-size: 100%;
+}
+.tour-caption-Evolution span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
 }
 
 .tour-caption-Basic span {
@@ -955,8 +1016,22 @@ div#portfoliolist {
     position: absolute;
     /*top: 19%;
 	right: 31%;*/
-    
     background-size: 100%;
+}
+
+.tour-caption-Basic span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
 }
 
 .tour-caption-Stats span {
@@ -970,6 +1045,20 @@ div#portfoliolist {
 	right: 31%;*/
     
     background-size: 100%;
+}
+.tour-caption-Stats span h6 {
+    background: rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    border-radius: 25px;
 }
 
 .portfolio-wrapper:hover span.tour-caption,
