@@ -24,9 +24,23 @@ class ProjectDexterWebService(object):
     def POST(self, pname='bulbasaur'):
         identifier = pname.lower()
         session = connect()
-        pokemon = util.get(session, tables.PokemonSpecies, identifier)
-        result = u'{0.name}, the {0.genus} Pokemon'.format(pokemon)
-#        result =  u'{0.id}\n{0.name}\n{0.genus} Pokemon\n{0.child_species}\n'.format(pokemon)
+        data_Species = util.get(session, tables.PokemonSpecies, identifier)
+        data = util.get(session, tables.Pokemon, identifier)
+        poke = ["NAME AND ID:", data_Species.name, data_Species.id]
+        
+        #Gathering Data into list with first entry being the name of list
+        #list name is used for spliting in javascript later on
+        pokemon_BasicInfo = [";BASIC_INFO: ", data_Species.generation, data.types, data.height, data.weight, data.base_experience, data.all_abilities]
+        pokemon_Description = [";Description: ",data_Species.flavor_text]
+        pokemon_BaseStats = [";BASE_STATS: ",data.stats]
+        pokemon_Evolution = [";EVOLUTION: ",data_Species.evolves_from_species_id]
+        pokemon_TypeMatchup = [";TYPE_MATCHUP ",]
+        pokemon_MovesList = [";MOVE_LIST: ", data.pokemon_moves]
+        pokemon_Breeding = [";BREEDING: ",data_Species.hatch_counter]
+        #Combining all the list into one for spliting in javascript
+        pokemon = poke + pokemon_BasicInfo + pokemon_Description + pokemon_BaseStats + pokemon_Evolution + pokemon_TypeMatchup + pokemon_MovesList + pokemon_Breeding
+        #makes list a string with each entry seperated by commas
+        result =  ','.join(map(str, pokemon))
         cherrypy.session['myresult'] = result
         return result
     
