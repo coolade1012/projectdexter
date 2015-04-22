@@ -65,6 +65,11 @@ if __name__ == '__main__':
              'tools.staticdir.on': True,
              'tools.staticdir.dir': './public'
          }
+            '/favicon.ico':
+            {
+                'tools.staticfile.on': True,
+                'tools.staticfile.filename:' '/static/images/favicon.ico'
+            }
      }
      webapp = ProjectDexter()
      webapp.generator = ProjectDexterWebService()

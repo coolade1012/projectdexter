@@ -876,7 +876,7 @@ div#portfoliolist {
 */
 
 .tour-caption span {
-    background: url(../images/Moves_pressed.png) no-repeat;
+/*    background: url(../images/Moves_pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
@@ -904,7 +904,7 @@ div#portfoliolist {
 }
 
 .tour-caption-Breeding span {
-    background: url(../images/Breeding_pressed.png) no-repeat;
+    /*background: url(../images/Breeding_pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
@@ -931,7 +931,7 @@ div#portfoliolist {
 }
 
 .tour-caption-Dex span {
-    background: url(../images/Dex-pressed.png) no-repeat;
+/*    background: url(../images/Dex-pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
@@ -955,7 +955,7 @@ div#portfoliolist {
 }
 
 .tour-caption-Type span {
-    background: url(../images/Type_pressed.png) no-repeat;
+/*    background: url(../images/Type_pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
@@ -1009,7 +1009,7 @@ div#portfoliolist {
 }
 
 .tour-caption-Basic span {
-    background: url(../images/Basic_pressed.png) no-repeat;
+/*    background: url(../images/Basic_pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
@@ -1036,7 +1036,7 @@ div#portfoliolist {
 }
 
 .tour-caption-Stats span {
-    background: url(../images/Stats_pressed.png) no-repeat;
+/*    background: url(../images/Stats_pressed.png) no-repeat;*/
     width: 100%;
     height: 100%;
     display: block;
